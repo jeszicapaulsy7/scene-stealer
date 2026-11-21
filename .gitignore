@@ -1,3 +1,6 @@
-node_modules
+node_modules/
 .env
-uploads/
+server/.env
+client/dist/
+.DS_Store
+*.log
