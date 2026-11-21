@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg: #0b0b0b;
+    --bg-elevated: #141414;
+    --bg-card: #121212;
+    --bg-input: #161616;
+    --surface-dark: #141414;
+    --surface-dark-muted: #9e9a95;
+    --surface-crimson: #9b111e;
+    --border: #262626;
+    --border-strong: #454545;
+    --text: #f7f5f2;
+    --text-muted: #a6a19b;
+    --accent: #d9232e;
+    --accent-hover: #f03843;
+    --accent-contrast: #ffffff;
+    --hero-glow: #2a0a0d;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'DM Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+::selection {
+    background: var(--accent);
+    color: var(--accent-contrast);
+}
